@@ -1,0 +1,6 @@
+from typing import Protocol
+
+class ObjectStorage(Protocol):
+    """Adapter contract for S3/GCS/Azure implementations; never expose bucket keys to clients."""
+    def put(self, name: str, content: bytes, content_type: str) -> str: ...
+    def signed_download_url(self, key: str, expires_seconds: int = 300) -> str: ...

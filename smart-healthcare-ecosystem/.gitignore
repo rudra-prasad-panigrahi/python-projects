@@ -1,0 +1,252 @@
+# ============================================================
+
+# Smart Healthcare Ecosystem - Git Ignore
+
+# ============================================================
+
+# ------------------------------------------------------------
+
+# Environment / Secrets
+
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+.local/
+
+# ------------------------------------------------------------
+
+# OS / Editor
+
+# ------------------------------------------------------------
+
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ------------------------------------------------------------
+
+# Python
+
+# ------------------------------------------------------------
+
+**pycache**/
+*.py[cod]
+*$py.class
+*.so
+
+.venv/
+venv/
+env/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.pyre/
+.pytype/
+
+pip-wheel-metadata/
+dist/
+build/
+*.egg-info/
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------
+
+# Node / Frontend
+
+# ------------------------------------------------------------
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.npm/
+.yarn/
+.pnpm-store/
+
+dist/
+build/
+coverage/
+
+*.tsbuildinfo
+
+# Vite
+
+.vite/
+
+# Next.js if introduced later
+
+.next/
+out/
+
+# ------------------------------------------------------------
+
+# Test / E2E
+
+# ------------------------------------------------------------
+
+playwright-report/
+test-results/
+blob-report/
+cypress/screenshots/
+cypress/videos/
+
+# ------------------------------------------------------------
+
+# Database / Local Development
+
+# ------------------------------------------------------------
+
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+postgres-data/
+mysql-data/
+redis-data/
+
+# ------------------------------------------------------------
+
+# Application Runtime
+
+# ------------------------------------------------------------
+
+logs/
+*.log
+tmp/
+temp/
+.cache/
+
+# ------------------------------------------------------------
+
+# Uploaded / Generated Files
+
+# ------------------------------------------------------------
+
+storage/uploads/*
+storage/processed-documents/*
+storage/thumbnails/*
+!storage/uploads/.gitkeep
+!storage/processed-documents/.gitkeep
+!storage/thumbnails/.gitkeep
+
+# ------------------------------------------------------------
+
+# AI / ML Artifacts
+
+# ------------------------------------------------------------
+
+ai/model_artifacts/*
+!ai/model_artifacts/.gitkeep
+
+ai/personal/vector_store/chroma/*
+ai/personal/vector_store/faiss/*
+
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.safetensors
+*.bin
+
+# Experiment outputs
+
+ai/experiments/runs/
+mlruns/
+wandb/
+outputs/
+
+# ------------------------------------------------------------
+
+# Synthetic / Generated Data
+
+# ------------------------------------------------------------
+
+data/generated/*
+!data/generated/.gitkeep
+
+data/runtime/*
+!data/runtime/.gitkeep
+
+# Do not commit accidentally generated production-like data
+
+*.parquet
+*.feather
+
+# ------------------------------------------------------------
+
+# Docker
+
+# ------------------------------------------------------------
+
+docker-compose.override.yml
+
+# ------------------------------------------------------------
+
+# Security
+
+# ------------------------------------------------------------
+
+security/secrets/*
+!security/secrets/.gitkeep
+
+# Certificates generated locally
+
+security/certificates/*
+!security/certificates/.gitkeep
+
+# ------------------------------------------------------------
+
+# Terraform
+
+# ------------------------------------------------------------
+
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# ------------------------------------------------------------
+
+# Deployment
+
+# ------------------------------------------------------------
+
+deployment/runtime/
+deployment/generated/
+
+# ------------------------------------------------------------
+
+# Miscellaneous
+
+# ------------------------------------------------------------
+
+.DS_Store
+*.bak
+*.tmp
+*.swp
+*.orig

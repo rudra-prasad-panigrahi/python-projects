@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Medication","type":"object","required":["name","dosage","status","source"],"properties":{"name":{"type":"string"},"dosage":{"type":"string"},"schedule":{"type":"string"},"status":{"enum":["active","inactive","completed"]},"source":{"type":"string"},"adherence":{"type":"number","minimum":0,"maximum":100}}}

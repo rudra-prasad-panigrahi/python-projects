@@ -1,0 +1,126 @@
+# ============================================================
+
+# Smart Healthcare Ecosystem - Docker Ignore
+
+# ============================================================
+
+# Git
+
+.git
+.gitignore
+.github/
+
+# Documentation that isn't required for image runtime
+
+docs/
+README.md
+LICENSE
+
+# IDE / OS
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment / Secrets
+
+.env
+.env.*
+!.env.example
+
+# Python
+
+**pycache**/
+*.py[cod]
+*.pyo
+
+.venv/
+venv/
+env/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Frontend build artifacts generated outside the image build process
+
+dist/
+build/
+coverage/
+
+# Tests
+
+tests/
+**/tests/
+playwright-report/
+test-results/
+cypress/screenshots/
+cypress/videos/
+
+# Local databases
+
+*.sqlite
+*.sqlite3
+*.db
+
+postgres-data/
+redis-data/
+
+# Runtime data
+
+logs/
+tmp/
+temp/
+.cache/
+
+# Local storage
+
+storage/uploads/
+storage/processed-documents/
+storage/thumbnails/
+
+# ML artifacts
+
+ai/model_artifacts/
+ai/personal/vector_store/
+mlruns/
+wandb/
+
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.safetensors
+
+# Synthetic/generated runtime data
+
+data/generated/
+data/runtime/
+
+# Security material
+
+security/secrets/
+security/certificates/
+
+# Terraform state
+
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Deployment-generated files
+
+deployment/runtime/
+deployment/generated/

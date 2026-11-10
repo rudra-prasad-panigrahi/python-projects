@@ -1,0 +1,67 @@
+dataset_name: personal_health_example
+version: "1.0"
+
+purpose:
+  - health trend analysis
+  - personal health analytics
+  - development and testing
+
+fields:
+
+  user_id:
+    type: string
+    description: Synthetic identifier for the personal user
+    sensitive: true
+
+  age:
+    type: numeric
+    unit: years
+    description: Age derived from date of birth
+
+  bmi:
+    type: numeric
+    unit: kg/m2
+    description: Body mass index
+
+  systolic_bp:
+    type: numeric
+    unit: mmHg
+    description: Systolic blood pressure
+
+  diastolic_bp:
+    type: numeric
+    unit: mmHg
+    description: Diastolic blood pressure
+
+  glucose:
+    type: numeric
+    unit: mg/dL
+    description: Recorded glucose measurement
+
+  heart_rate:
+    type: numeric
+    unit: bpm
+    description: Recorded heart rate
+
+  spo2:
+    type: numeric
+    unit: percent
+    description: Peripheral oxygen saturation
+
+  weight:
+    type: numeric
+    unit: kg
+    description: Recorded body weight
+
+  recorded_at:
+    type: datetime
+    description: Measurement timestamp
+
+  source:
+    type: categorical
+    description: Data source
+    allowed_values:
+      - manual
+      - device
+      - import
+      - synthetic

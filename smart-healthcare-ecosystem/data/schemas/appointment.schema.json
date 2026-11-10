@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Appointment","type":"object","required":["title","starts_at","status"],"properties":{"title":{"type":"string"},"starts_at":{"type":"string","format":"date-time"},"organization":{"type":"string"},"status":{"enum":["requested","pending","confirmed","cancelled","completed"]},"is_synthetic":{"type":"boolean"}}}

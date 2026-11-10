@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"LaboratoryResult","type":"object","required":["name","result","unit","source"],"properties":{"name":{"type":"string"},"result":{"type":"number"},"unit":{"type":"string"},"reference_range":{"type":"string"},"source":{"type":"string"},"source_date":{"type":"string","format":"date"}}}
